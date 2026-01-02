@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Delegation List</title>
+</head>
+<body>
+    <h1>Todo List</h1>
+    <ul id="todoList">
+        <li>Buy milk</li>
+        <li>Study Js</li>
+        <li>Play Batminton</li>
+    </ul>
+    <button id="add">Add New Item</button>
+    <script>
+        const list = document.getElementById("todoList")
+        const addBtn = document.getElementById("add");
+
+        list.addEventListener("click",function(e){
+            if(e.target.tagName === "LI") {
+                e.target.style.color = "red";
+                e.target.style.textDecoration = "line-through";
+                alert("you clicked: "+ e.target.textContent);
+            } 
+        });
+
+        addBtn.addEventListener("click", function() { 
+            const li =document.createElement("li");
+
+            li.textContent = "new task added";
+
+            list.appendChild(li);
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Delegation List 2</title>
+</head>
+<body>  
+   <h1 id="text">Hello,I am Interactive</h1>
+
+  <div id="container">  <!--Parent container(event Listner added -not on buttons)-->
+    <button id="btn">Change Color</button>    <!--child buttons-->
+    <button id="second">change Size</button>
+</div>
+   
+
+   <script>  //select elements from the dom using ids
+    const text = document.getElementById("text");  //access heading element
+    const button = document.getElementById("container");   //access parent container 
+    
+
+
+    container.addEventListener("click", function(e){
+        if(e.target.id === "btn") {
+            text.style.color = "red"
+            text.textContent = "change text";
+        }
+        if(e.target.id === "second"){
+            text.style.fontSize = "40px";
+            text.textContent = "size changed";
+
+        }
+    });
+    
+   </script>
+</body>
+</html>
