@@ -1,0 +1,44 @@
+body {
+    font-family: Arial sans-serif;
+    background-color: rgb(227, 214, 197);
+    padding: 40px;
+}
+h1 {
+    color: black;
+    margin-bottom: 15px;
+}
+
+input {
+    padding: 8px 12px;
+    border: 1px solid whitesmoke;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+button {
+    padding: 8px 12px;
+    background-color: beige;
+    border: none;
+    color: black;
+    cursor: pointer;
+    margin-left: 10px;
+}
+button:hover {
+    background-color: aquamarine;
+}
+ul {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+ li {
+    margin-bottom: 10px;
+    color: black;
+ }
+ li button{
+      margin-left: 10px;
+      background-color: beige;
+ }
+ 
+  li button:hover {
+    background-color: red;
+  }
