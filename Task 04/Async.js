@@ -24,7 +24,7 @@ async function runSerial() {  //serial task run one after another
 
      try  {
         //await asyncTask("task 2" , 2000, true);   //error 
-        await asyncTask("task 2" , 2000);
+        await asyncTask("task 2",2000);
 
     } catch (e) {
          console.log("task 2:", e.message);

@@ -1,0 +1,92 @@
+/* General body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* App container */
+div {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Header */
+h1 {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Loading and error text */
+p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* UserList container */
+.UserList {
+  display: inline-block;
+  text-align: left;
+  margin-top: 20px;
+  padding: 15px 25px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Each user row */
+.UserList div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* Last user row no border */
+.UserList div:last-child {
+  border-bottom: none;
+}
+
+/* User button */
+.UserList button {
+  padding: 5px 10px;
+  background-color: #4CAF50; /* green */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+/* Button hover effect */
+.UserList button:hover {
+  background-color: #45a049;
+}
+
+/* Display clicked user */
+p.clicked-user {
+  font-weight: bold;
+  color: #222;
+  margin-top: 15px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .UserList {
+    width: 90%;
+    padding: 10px 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .UserList button {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+}

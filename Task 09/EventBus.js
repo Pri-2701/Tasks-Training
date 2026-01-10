@@ -24,3 +24,10 @@ bus.subscribe("orderPlaced",(order)=>{
     console.log("Billing Created invoice for:", order);
 })
 bus.publish("orderPlaced", {id: 101, item:"Pizza" , Price:300});
+
+
+
+
+
+
+ 
