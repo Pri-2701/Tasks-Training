@@ -1,0 +1,92 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f6f8;
+}
+
+/* Center container */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card styling */
+.auth-card {
+  background: #fff;
+  width: 350px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Titles */
+.auth-card h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Status */
+.auth-card p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+/* Buttons */
+.auth-btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* Login button */
+.login-btn {
+  background-color: #1976d2;
+  color: #fff;
+}
+
+.login-btn:hover {
+  background-color: #125aa3;
+}
+
+/* Logout button */
+.logout-btn {
+  background-color: #d32f2f;
+  color: #fff;
+}
+
+.logout-btn:hover {
+  background-color: #a82424;
+}
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Input field styling */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
