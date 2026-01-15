@@ -17,9 +17,9 @@ function App3() {
   //   setCount(count + 1);
   // }, [count]); // controlled Loop  stop at 5 
  
-  useEffect(() => {
-    setCount(prevcount => prevcount + 5);
-  }, []); //count ++prevcount value
+  // useEffect(() => {
+  //   setCount(prevcount => prevcount + 5);
+  // }, []); //count ++prevcount value
 
 
 

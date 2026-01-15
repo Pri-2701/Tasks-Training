@@ -4,7 +4,7 @@ import React from "react";
 const UserList = React.memo(({ users, handleClick }) => {
   console.log("UserList rendered");
 
-  if (!users.length) return <p>No users found</p>;
+  if (!users || users.length ===0)  {return <p>No users found</p>  }
 
   return (
     <div>
