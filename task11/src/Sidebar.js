@@ -1,18 +1,15 @@
 
+{/* Sidebar */}
+<aside className="sidebar">
+  <div className="sidebar-header">
+    🏥 <span>Hospital</span>
+  </div>
 
-function Sidebar( ){
-    return (
-        <div className="sidebar">
-       <h3>Menu</h3>
-
-       <ul>
-        <li>Dashboard</li>
-        <li>Patients</li>
-        <li>Doctors</li>
-       </ul>
-</div>
-  
-    );
-}
-
-export default Sidebar;
+  <ul className="menu">
+    <li className="menu-item">📊 Dashboard</li>
+    <li className="menu-item active">🧑‍🤝‍🧑 Patients</li>
+    <li className="menu-item">👨‍⚕️ Doctors</li>
+    <li className="menu-item">💊 Pharmacy</li>
+    <li className="menu-item">⚙️ Settings</li>
+  </ul>
+</aside>
