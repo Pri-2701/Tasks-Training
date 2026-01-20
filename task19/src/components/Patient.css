@@ -1,0 +1,23 @@
+.patient-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.patient-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 15px;
+  background: #f9fafb;
+  border-radius: 6px;
+  border-left: 4px solid #3498db;
+}
+
+.patient-name {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.patient-age {
+  color: #555;
+}

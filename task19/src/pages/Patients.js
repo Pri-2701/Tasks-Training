@@ -1,11 +1,17 @@
+import React, { useState } from "react";
+import { patients as patientsData } from "../data/patients";
 import PatientList from "../components/PatientList";
+import "./Patients.css";
 
 function Patients() {
+  // IMPORTANT: default is {} (not undefined)
+  const [patients] = useState(patientsData);
+
   return (
-    <>
-      <h2>Patients Page</h2>
-      <PatientList />
-    </>
+    <div>
+      <h2>Patients</h2>
+      <PatientList patients={patients} />
+    </div>
   );
 }
 

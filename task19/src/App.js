@@ -1,4 +1,5 @@
 import React, { Suspense, Profiler } from "react";
+import "./App.css";
 
 const Dashboard = React.lazy(() => import("./pages/Dashboard"));
 const Patients = React.lazy(() => import("./pages/Patients"));
@@ -19,3 +20,5 @@ function App() {
 }
 
 export default App;
+
+

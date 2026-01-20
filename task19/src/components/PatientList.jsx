@@ -1,26 +1,24 @@
-import { List } from "react-window";
-import patients from "../data/patients"; 
+import React, { useMemo } from "react";
 import PatientRow from "./PatientRow";
+import "./Patient.css";
 
-function PatientList() {
+function PatientList({ patients }) {
+  // SAFE: patients always object
+  const patientArray = useMemo(() => {
+    return Object.values(patients ?? {});
+  }, [patients]);
+
   return (
-    <List
-      height={300}
-      itemCount={patients.length}
-      itemSize={35}
-      width={300}
-    >
-      {({ index, style }) => (
-        <PatientRow
-          name={patients[index].name}
-          style={style}
-        />
-      )}
-    </List>
+    <div>
+      {patientArray.map((p) => (
+        <PatientRow key={p.id} patient={p} />
+      ))}
+    </div>
   );
 }
 
 export default PatientList;
+
 
 
 
